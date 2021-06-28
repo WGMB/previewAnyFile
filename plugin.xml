@@ -36,7 +36,7 @@
         </config-file>
         <source-file src="src/android/PreviewAnyFile.java" target-dir="src/com/mostafa/previewanyfile" />
 
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <config-file target="AndroidManifest.xml" parent="application">
             <provider android:name="androidx.core.content.FileProvider" android:authorities="${applicationId}.fileprovider" android:exported="false" android:grantUriPermissions="true">
                 <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
             </provider>
